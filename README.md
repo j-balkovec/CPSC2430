@@ -18,18 +18,20 @@ The Data Structures Class is designed to provide a comprehensive understanding o
 ## Topics Covered
 
 - Introduction to Data Structures
-- Arrays and Dynamic Arrays
-- Linked Lists
-- Stacks and Queues
-- Trees (Binary Trees, Binary Search Trees, AVL Trees)
-- Heaps and Priority Queues
-- Graphs (Graph Representation, Traversals, Shortest Paths, Minimum Spanning Trees)
-- Hash Tables
-- Sorting and Searching Algorithms
+- Recursion (lab2, p2)
+- Stacks & Queues (p1)
+- Trees (Binary Trees, Binary Search Trees, AVL Trees) (lab3, p3)
+- Heaps and Priority Queues (lab4)
+- Hash Tables (p4)
+- Sorting and Searching Algorithms (lab5)
+- Big O notation and time complexity (lab2, lab5)
+- STL (p5)
 
 ## Prerequisites
 
-To get the most out of this course, it is recommended to have a basic understanding of programming concepts and algorithms. Familiarity with a programming language like Java, C++, or Python would be beneficial.
+To get the most out of this course, it is recommended to have a basic understanding of programming concepts and algorithms. Familiarity with a programming language like C++, or Python would be beneficial.
+
+To run all of the projects, run `make` where a MakeFile is present. If not teh standard `g++ <file.cpp> -Werror -Wall -pedantic -0 <executable>` should work. Swap `<file.cpp>` and `<xecutable>`.
 
 ## Getting Started
 
@@ -39,7 +41,7 @@ To access the course materials and resources, follow these steps:
 git clone https://github.com/your-username/data-structures-class.git
 
 
-2. Explore the different directories and files to find lecture notes, code examples, and assignments.
+2. Explore the different directories and files to find code examples, and assignments.
 
 3. Start with the provided introductory materials to get acquainted with the course structure and expectations.
 
