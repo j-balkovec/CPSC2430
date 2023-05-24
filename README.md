@@ -18,14 +18,14 @@ The Data Structures Class is designed to provide a comprehensive understanding o
 ## Topics Covered
 
 - Introduction to Data Structures
-- Recursion (lab2, p2)
-- Stacks & Queues (p1)
-- Trees (Binary Trees, Binary Search Trees, AVL Trees) (lab3, p3)
-- Heaps and Priority Queues (lab4)
-- Hash Tables (p4)
-- Sorting and Searching Algorithms (lab5)
-- Big O notation and time complexity (lab2, lab5)
-- STL (p5)
+- Recursion `lab2` and  `p2`
+- Stacks & Queues `p1`
+- Trees (Binary Trees, Binary Search Trees, AVL Trees) `lab3` and `p3`
+- Heaps and Priority Queues `lab4`
+- Hash Tables `p4`
+- Sorting and Searching Algorithms `lab5`
+- Big O notation and time complexity `lab2` and `lab5`
+- STL `p5`
 
 ## Prerequisites
 
