@@ -1,4 +1,4 @@
-# Data Structures Class
+# Data Structures `CPSC 2430` @ SeattleU
 
 Welcome to the Data Structures Class repository! This repository contains the course materials and resources for the Data Structures class.
 
