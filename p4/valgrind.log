@@ -1,0 +1,51 @@
+==1821919== Memcheck, a memory error detector
+==1821919== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1821919== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==1821919== Command: ./main
+==1821919== Parent PID: 1821754
+==1821919== 
+==1821919== 
+==1821919== HEAP SUMMARY:
+==1821919==     in use at exit: 20,733 bytes in 287 blocks
+==1821919==   total heap usage: 2,857,610 allocs, 2,857,323 frees, 68,424,436 bytes allocated
+==1821919== 
+==1821919== 72 bytes in 1 blocks are still reachable in loss record 1 of 5
+==1821919==    at 0x4C378C3: operator new(unsigned long) (vg_replace_malloc.c:422)
+==1821919==    by 0x406159: run() (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x404590: main (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919== 
+==1821919== 408 bytes in 1 blocks are still reachable in loss record 2 of 5
+==1821919==    at 0x4C378C3: operator new(unsigned long) (vg_replace_malloc.c:422)
+==1821919==    by 0x4068A4: std::vector<std::vector<DataEntry*, std::allocator<DataEntry*> >, std::allocator<std::vector<DataEntry*, std::allocator<DataEntry*> > > >::_M_default_append(unsigned long) (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x40614F: run() (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x404590: main (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919== 
+==1821919== 1,029 bytes in 33 blocks are still reachable in loss record 3 of 5
+==1821919==    at 0x4C378C3: operator new(unsigned long) (vg_replace_malloc.c:422)
+==1821919==    by 0x4F744BE: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib64/libstdc++.so.6.0.25)
+==1821919==    by 0x40DA37: CovidDB::add_covid_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x406384: run() (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x404590: main (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919== 
+==1821919== 2,304 bytes in 17 blocks are still reachable in loss record 4 of 5
+==1821919==    at 0x4C378C3: operator new(unsigned long) (vg_replace_malloc.c:422)
+==1821919==    by 0x40EA25: void std::vector<DataEntry*, std::allocator<DataEntry*> >::_M_realloc_insert<DataEntry* const&>(__gnu_cxx::__normal_iterator<DataEntry**, std::vector<DataEntry*, std::allocator<DataEntry*> > >, DataEntry* const&) (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x40B6FB: CovidDB::add(DataEntry*) (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x40DADE: CovidDB::add_covid_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x406384: run() (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x404590: main (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919== 
+==1821919== 16,920 bytes in 235 blocks are still reachable in loss record 5 of 5
+==1821919==    at 0x4C378C3: operator new(unsigned long) (vg_replace_malloc.c:422)
+==1821919==    by 0x40D9C8: CovidDB::add_covid_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x406384: run() (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919==    by 0x404590: main (in /home/st/jbalkovec/2430CPSC/Projects/A4/main)
+==1821919== 
+==1821919== LEAK SUMMARY:
+==1821919==    definitely lost: 0 bytes in 0 blocks
+==1821919==    indirectly lost: 0 bytes in 0 blocks
+==1821919==      possibly lost: 0 bytes in 0 blocks
+==1821919==    still reachable: 20,733 bytes in 287 blocks
+==1821919==         suppressed: 0 bytes in 0 blocks
+==1821919== 
+==1821919== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
