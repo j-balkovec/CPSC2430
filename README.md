@@ -31,7 +31,7 @@ The Data Structures Class is designed to provide a comprehensive understanding o
 
 To get the most out of this course, it is recommended to have a basic understanding of programming concepts and algorithms. Familiarity with a programming language like C++, or Python would be beneficial.
 
-To run all of the projects, run `make` where a MakeFile is present. If not teh standard `g++ <file.cpp> -Werror -Wall -pedantic -0 <executable>` should work. Swap `<file.cpp>` and `<xecutable>`.
+To run all of the projects, run `make` where a MakeFile is present. If not teh standard `g++ <file.cpp> -Werror -Wall -pedantic -0 <executable>` should work. Swap `<file.cpp>` and `<xecutable>`. After that press <kbd>Enter</kbd> and you should be all set!
 
 ## Getting Started
 
