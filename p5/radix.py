@@ -1,8 +1,9 @@
 from math import floor
-from functools import map
+#from functools import map
 from random import randint
 import random as rnd
 from array import ArrayType
+import time
 
 ##
 # \brief Radix Sort Python implementation
@@ -85,11 +86,14 @@ def main():
     print("[#1]:", end=" ")
     print_array(arr)
 
+    start_time = time.time()
     radix_sort(arr)
+    end_time = time.time()
 
     print("[#2]:", end=" ")
     print_array(arr)
     print("\n[sorted]: ", is_sorted(arr))
+    print("\nExecution time: %.6f seconds" % (end_time - start_time))
     print("\n")
     
 if __name__ == "__main__":
