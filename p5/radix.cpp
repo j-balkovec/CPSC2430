@@ -31,8 +31,11 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <chrono>
 
-// Function to get the maximum element in the array
+using namespace std::chrono;
+
+// function to get the maximum element in the array
 template <typename T>
 T getMax(const std::vector<T>& arr) {
     T max = arr[0];
@@ -43,61 +46,64 @@ T getMax(const std::vector<T>& arr) {
     return max;
 }
 
-// Using counting sort to sort elements based on significant place
+// using counting sort to sort elements based on significant place
 template <typename T>
 void countingSort(std::vector<T>& arr, int exp) {
     int n = arr.size();
     std::vector<T> output(n);
     std::vector<int> count(10, 0);
 
-    // Store the count of occurrences in count[]
+    // store the count of occurrences in count[]
     for (int i = 0; i < n; i++)
         count[(arr[i] / exp) % 10]++;
 
-    // Change count[i] so that count[i] now contains the
+    // change count[i] so that count[i] now contains the
     // actual position of this digit in output[]
     for (int i = 1; i < 10; i++)
         count[i] += count[i - 1];
 
-    // Build the output array
+    // build the output array
     for (int i = n - 1; i >= 0; i--) {
         output[count[(arr[i] / exp) % 10] - 1] = arr[i];
         count[(arr[i] / exp) % 10]--;
     }
 
-    // Copy the output array to arr[] so that arr[] contains
+    // copy the output array to arr[] so that arr[] contains
     // sorted numbers according to the current digit
     std::copy(output.begin(), output.end(), arr.begin());
 }
 
-// Radix sort implementation
+// sort
 template <typename T>
 void radixSort(std::vector<T>& arr) {
-    // Find the maximum element to determine the number of digits
     T max = getMax(arr);
 
-    // Perform counting sort for every digit
     for (int exp = 1; max / exp > 0; exp *= 10)
         countingSort(arr, exp);
 }
 
-// Function to print the elements of the array
 template <typename T>
 void printArray(const std::vector<T>& arr) {
+    std::cout << "[";
     for (const auto& element : arr)
         std::cout << element << " ";
-    std::cout << std::endl;
+    std::cout << "]" << std::endl;
 }
 
 int main() {
     std::vector<int> arr = { 170, 45, 75, 90, 802, 24, 2, 66 };
-    std::cout << "Original array: ";
+    std::cout << "\n[#1]: ";
     printArray(arr);
 
+    auto start_time = high_resolution_clock::now();
     radixSort(arr);
-    
-    std::cout << "Sorted array: ";
+    auto end_time = high_resolution_clock::now();
+
+    std::cout << "\n[#2]: ";
     printArray(arr);
+    auto duration = duration_cast<microseconds>(end_time - start_time).count();
+    std::cout << "\n[time]: " << duration << " microseconds\n" << std::endl;
+
 
     return 0;
 }
