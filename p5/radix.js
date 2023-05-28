@@ -31,10 +31,8 @@
 //}
 
 function radixSort(arr) {
-  // Find the maximum number to determine the number of digits
   const max = Math.max(...arr);
 
-  // Perform counting sort for every digit
   for (let exp = 1; Math.floor(max / exp) > 0; exp *= 10) {
     countingSort(arr, exp);
   }
@@ -45,23 +43,19 @@ function countingSort(arr, exp) {
   const output = new Array(n);
   const count = new Array(10).fill(0);
 
-  // Count the occurrences of each digit in the current place
   for (let i = 0; i < n; i++) {
     count[Math.floor(arr[i] / exp) % 10]++;
   }
 
-  // Calculate the cumulative count to determine the correct positions
   for (let i = 1; i < 10; i++) {
     count[i] += count[i - 1];
   }
 
-  // Build the sorted output array
   for (let i = n - 1; i >= 0; i--) {
     output[count[Math.floor(arr[i] / exp) % 10] - 1] = arr[i];
     count[Math.floor(arr[i] / exp) % 10]--;
   }
 
-  // Copy the sorted elements back to the original array
   for (let i = 0; i < n; i++) {
     arr[i] = output[i];
   }
@@ -69,6 +63,13 @@ function countingSort(arr, exp) {
 
 const arr = [170, 45, 75, 90, 802, 24, 2, 66];
 
-console.log("Original array:", arr);
+console.log("[#1]: ", arr);
+
+const startTime = Date.now();
 radixSort(arr);
-console.log("Sorted array:", arr);
+const endTime = Date.now();
+
+console.log("[#2]: ", arr);
+
+const executionTime = endTime - startTime;
+console.log("[time]:", executionTime.toFixed(3), "milliseconds");
