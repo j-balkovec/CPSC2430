@@ -1,6 +1,6 @@
 # Radix Sort
 
-Radix Sort is a non-comparative sorting algorithm that sorts integers by processing individual digits or groups of digits. It works by distributing the elements into different buckets based on their radix (base) and then repeatedly sorting the elements by each digit. This process is repeated until all digits have been considered, resulting in a fully sorted array.
+[Radix Sort](https://www.simplilearn.com/tutorials/data-structure-tutorial/radix-sort#:~:text=Radix%20Sort%27s%20time%20complexity%20of,of%20elements%20with%20equal%20values.) is a non-comparative sorting algorithm that sorts integers by processing individual digits or groups of digits. It works by distributing the elements into different buckets based on their radix (base) and then repeatedly sorting the elements by each digit. This process is repeated until all digits have been considered, resulting in a fully sorted array.
 
 ## Time Complexity
 
