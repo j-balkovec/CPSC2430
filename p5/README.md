@@ -2,7 +2,7 @@
 
 [Radix Sort](https://www.simplilearn.com/tutorials/data-structure-tutorial/radix-sort#:~:text=Radix%20Sort%27s%20time%20complexity%20of,of%20elements%20with%20equal%20values.) is a non-comparative sorting algorithm that sorts integers by processing individual digits or groups of digits. It works by distributing the elements into different buckets based on their radix (base) and then repeatedly sorting the elements by each digit. This process is repeated until all digits have been considered, resulting in a fully sorted array.
 
-## Time Complexity
+## Time Complexity⏱️
 
 The time complexity of Radix Sort depends on the number of digits `d` and the number of elements `n` in the array.
 
@@ -21,7 +21,7 @@ The time complexity of Radix Sort depends on the number of digits `d` and the nu
   - Average Case: O(d * n)
   - Worst Case: O(d * n)
 
-## Space Complexity
+## Space Complexity🚀
 
 The space complexity of Radix Sort is determined by the size of the input array `n`.
 
@@ -48,14 +48,14 @@ Feel free to modify the code as per your needs. All code was ran in VSCode with 
 
 Breadth-First Search **(BFS)** is usually graph traversal algorithm (I implemented it on a BST) that explores all the branches of a tree in breadth-first order, visiting all the children of a branch before moving on to the next level. It uses a queue data structure to keep track of the nodes to visit.
 
-## Time Complexity
+## Time Complexity⏱️
 
 The time complexity of BFS depends on the number of vertices `V` and the number of edges `E` in the graph.
 
 - C++:
   - Time Complexity: O(V + E)
 
-## Space Complexity
+## Space Complexity🚀
 
 The space complexity of BFS is determined by the maximum number of vertices that can be in the queue at any given time, which depends on the size of the graph.
 
@@ -67,14 +67,14 @@ The space complexity of BFS is determined by the maximum number of vertices that
 
 Depth-First Search **(DFS)** is usually a graph traversal algorithm (I implemented it on a BST) that explores all the branches of a graph by going as deep as possible before backtracking. It uses a stack data structure to keep track of the nodes to visit.
 
-## Time Complexity
+## Time Complexity⏱️
 
 The time complexity of DFS depends on the number of vertices `V` and the number of edges `E` in the graph.
 
 - C++:
   - Time Complexity: O(V + E)
 
-## Space Complexity
+## Space Complexity🚀
 
 The space complexity of DFS is determined by the maximum number of vertices that can be in the stack at any given time, which depends on the size of the graph.
 
@@ -86,7 +86,7 @@ The space complexity of DFS is determined by the maximum number of vertices that
 
 A [Trie](https://en.wikipedia.org/wiki/Trie), also known as a prefix tree, is a tree-like data structure that stores a collection of strings. It is particularly useful for efficient string searching and prefix matching. Each node in the trie represents a prefix or a complete word, and the children of a node represent the possible characters that can follow that prefix.
 
-## Time Complexity
+## Time Complexity⏱️
 
 The time complexity of various operations in a Trie depends on the length of the strings `L` and the number of strings `N` stored in the trie.
 
@@ -99,7 +99,7 @@ The time complexity of various operations in a Trie depends on the length of the
 - Delete:
   - Time Complexity: O(L)
 
-## Space Complexity
+## Space Complexity🚀
 
 The space complexity of a Trie is determined by the number of nodes in the trie and the length of the strings.
 
