@@ -37,7 +37,7 @@ The space complexity of Radix Sort is determined by the size of the input array 
 
 Feel free to modify the code as per your needs. All code was ran in VSCode with necessary extensions.
 
-###Side Note:
+### Side Note:
   C++ offers templates, allowing algorithms to be written without specific data types, enabling parsing of any type into the
   algorithm. This is because C++ generates specialized code at compile-time. In contrast, Python and JavaScript are interpreted
   languages with dynamic typing, where variable types are determined at runtime based on values assigned to them. This
