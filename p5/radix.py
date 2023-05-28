@@ -1,5 +1,5 @@
 from math import floor
-#from functools import map
+from functools import map
 from random import randint
 import random as rnd
 from array import ArrayType
