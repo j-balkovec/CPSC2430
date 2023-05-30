@@ -68,9 +68,9 @@ def radix_sort(arr):
 def print_array(arr):
     print("[" + " ".join(map(str, arr)) + "]")
 
-def fill_array(arr):
-    for i in range(10):
-        arr.append(rnd.randint(1, 100))
+#def fill_array(arr):
+#    for i in range(10):
+#        arr.append(rnd.randint(1, 100))
 
 def is_sorted(arr):
     for i in range(len(arr) - 1):
@@ -80,7 +80,7 @@ def is_sorted(arr):
 
 def main():
     print("\n")
-    arr = []
+    arr = [261, 777, 659, 55, 432, 43]
     fill_array(arr)
     print("[#1]:", end=" ")
     print_array(arr)
