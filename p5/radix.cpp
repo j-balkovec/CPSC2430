@@ -91,7 +91,7 @@ void printArray(const std::vector<T>& arr) {
 }
 
 int main() {
-    std::vector<int> arr = { 170, 45, 75, 90, 802, 24, 2, 66 };
+    std::vector<int> arr = { 261, 777, 659, 55, 432, 43 };
     std::cout << "\n[#1]: ";
     printArray(arr);
 
