@@ -1,3 +1,8 @@
+"""
+Plot's data retrieved from the data.txt file
+"""
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 
