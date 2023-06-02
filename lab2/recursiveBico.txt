@@ -1,0 +1,20 @@
+recursiveBico(3,2) [nanoseconds]
+163
+170
+173
+168
+165
+
+recursiveBico(10,5) [nanoseconds]
+2687
+2670
+2683
+2689
+2744
+
+recursiveBico(30,15) [nanoseconds]
+919573823
+917239698
+914211298
+908894767
+912706467
