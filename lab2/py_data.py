@@ -94,8 +94,8 @@ def main():
 
 
 def main():
-    bico_data = read_data('bico2.txt')
-    recursive_bico_data = read_data('recursiveBico2.txt')
+    bico_data = read_data('bico.txt')
+    recursive_bico_data = read_data('recursiveBico.txt')
 
     print_sublists(bico_data)
     print_sublists(recursive_bico_data)
