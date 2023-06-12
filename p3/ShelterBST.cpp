@@ -145,6 +145,7 @@ struct ShelterBST::TreeNode* ShelterBST::search(struct TreeNode* root, std::stri
   else {
     return search(root -> right, name);
   }
+  return nullptr;
 }
 
 /** DOCUMENTATION: 
